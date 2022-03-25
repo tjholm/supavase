@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content=""> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+---
+// Component Imports
+import '../styles/global.css';
 
-  <body class="flex">
-    <h1 class="header">Supavase</h1>
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
 
-    <div class="vase_outer flex">
-      <p>
-        The Open Source<br /><span class="text-supa">Pottery Alternative</span>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<title>Supavase - The open source pottery alternative</title>
+	</head>
+
+	<body class="flex flex-col text-white gap-10">
+    <div class="border-zinc-700 border-b">
+      <h1 class="text-3xl p-4">Supavase</h1>
+    </div>
+    <div class="flex m-auto">
+      <p class="text-3xl p-4">
+        The&nbsp;Open&nbsp;Source<br /><span style="color: #21ab73"
+          >Pottery&nbsp;Alternative</span
+        >
       </p>
       <svg
-        id="vase"
+        class="w-36"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -49,10 +46,13 @@
         </g>
       </svg>
     </div>
-    <div class="redirect">
-      <p class="text-sm">Maybe you meant...</p>
-      <a class="button" href="https://supabase.com">
-        <img src="supabase-logos/supabase-logo-wordmark--dark.svg" />
+    <div class="flex flex-col justify-center m-auto gap-4">
+      <p class="text-xl text-center">Maybe you meant...</p>
+      <a
+        class="w-40 border py-2 px-4 rounded shadow border-zinc-700"
+        href="https://supabase.com"
+      >
+        <img src="/supabase-logos/supabase-logo-wordmark--dark.svg" />
       </a>
     </div>
   </body>
